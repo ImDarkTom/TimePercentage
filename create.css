@@ -54,6 +54,22 @@ button {
     padding: 10px 20px;
 }
 
+.back-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.8vh;
+    z-index: 9999;
+    font-family: 'Roboto';
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.back-text:hover {
+    font-weight: bolder;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
