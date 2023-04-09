@@ -18,5 +18,5 @@ goButton.addEventListener("click", () => {
     const toText = toTextElement.value;
 
     const q = btoa(JSON.stringify({starttime: fromDatetime, endtime: toDatetime, from:fromText, to:toText}));
-    window.location = `${location.protocol}//${location.host}/${location.pathname}?q=${q}`;
+    window.location = `${location.protocol}//${location.host}/${location.pathname}/TimePercentage/?q=${q}`;
 });
