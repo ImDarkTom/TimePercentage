@@ -1,11 +1,6 @@
 const urlParams = new URL(window.location).searchParams;
 
-let q;
-try {
-    q = JSON.parse(atob(urlParams.get("q")));
-} catch (error) {
-    window.location = `${location.protocol}//${location.host}/TimePercentage/create/`;
-}
+const q = JSON.parse(atob(urlParams.get("q")));
 const startTime = q.starttime;
 const endTime = q.endtime;
 const from = q.from;
